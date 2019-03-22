@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
+    <link rel="stylesheet" href="ajax-live-search-master/css/ajaxlivesearch.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    <div class="images">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+    <div class="searchbox">
+            <input type="text" class='mySearch' id="ls_query" placeholder="Type to start searching ...">
     </div>
     
+    <div class="images">
+        <div class="photo">
+            <a href="photos/01.jpg" class="photo" data-lightbox="image-1" data-title="My backyard"><img src="photos/01.jpg" alt=""></a>
+            <a href="photos/02.jpg" class="photo" data-lightbox="image-1"><img src="photos/02.jpg" alt=""></a>
+            <a href="photos/03.jpg" class="photo" data-lightbox="image-1"><img src="photos/03.jpg" alt=""></a>
+            <a href="photos/04.jpg" class="photo" data-lightbox="image-1"><img src="photos/04.jpg" alt=""></a>
+            <a href="photos/05.jpg" class="photo" data-lightbox="image-1"><img src="photos/05.jpg" alt=""></a>
+            <a href="photos/06.jpg" class="photo" data-lightbox="image-1"><img src="photos/06.jpg" alt=""></a>
+            <a href="photos/07.jpg" class="photo" data-lightbox="image-1"><img src="photos/07.jpg" alt=""></a>
+            <a href="photos/08.jpg" class="photo" data-lightbox="image-1"><img src="photos/08.jpg" alt=""></a>
+            <a href="photos/09.jpg" class="photo" data-lightbox="image-1"><img src="photos/09.jpg" alt=""></a>
+            <a href="photos/10.jpg" class="photo" data-lightbox="image-1"><img src="photos/10.jpg" alt=""></a>
+            <a href="photos/11.jpg" class="photo" data-lightbox="image-1"><img src="photos/11.jpg" alt=""></a>
+            <a href="photos/12.jpg" class="photo" data-lightbox="image-1"><img src="photos/12.jpg" alt=""></a>
+        </div>
+    </div>
+    
+
+    <script src='jquery-3.3.1.min.js'></script>
+    <script src='lightbox/dist/js/lightbox.js'></script>
+    <script src='ajax-live-search-master/js/ajaxlivesearch.js'></script>
+    <script src='js/main.js'></script>
 </body>
 </html>

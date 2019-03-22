@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+
+
+/* Photo Gallery */
+.images {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    margin: 1.4rem;
+    transition: 1s;
+}
+
+img:hover {
+    transform: rotate(1.1);
+}
