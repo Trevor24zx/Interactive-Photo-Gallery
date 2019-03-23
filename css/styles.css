@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,26 +8,28 @@
 body {
     margin: 0;
     background-color: white;
+    font-family: 'Roboto Mono', monospace;
 }
 
-
+li {
+  list-style: none;
+}
 
 /* Photo Gallery */
-.searchbox {
-    width: 100%;
+#search-box {
+    margin: 0 auto;
+    width: 50%;
     padding: 2rem;
-    /* margin-right: 5em; */
-    /* margin: 0 auto; */
+    margin-top: 10px;
     text-align: center;
 }
 
-.mySearch {
+#mySearch {
     height: 5px;
     width: 100%;
-    margin: 0 auto;
     padding: 21px;
     border: 1px solid rgb(216, 215, 215);
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .images {
@@ -54,17 +58,15 @@ img:hover {
     transform: scale(1.1);
 }
 
-.lb-caption, .lb-data {
-    text-align: center;
+.lb-data .lb-details {
+  margin-top: 1.1em;
+  margin-left: 4em;
+  margin-right: auto;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-align: center; 
 }
 
-.lb-number {
-    display: none;
-}
-
-.lb-dataContainer {
-    text-align: center;
-}
 
 /* === Media Queries === */
 
@@ -105,14 +107,12 @@ img:hover {
   
   @media (min-width: 1024px) {
     .lb-nav a.lb-next {
-    display: inline;
       position: fixed;
       margin-right: 80px;
-      right: 150%;
+      right: 10%;
       top: -20px;
     }
     .lb-nav a.lb-prev {
-    display: inline;
       position: fixed;
       margin-left: 80px;
       left: 10%;
